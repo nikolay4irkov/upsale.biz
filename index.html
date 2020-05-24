@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <title>MRB</title>
+  <meta name="theme-color" content="#c9e0e04d" />
+  <meta
+    name="apple-mobile-web-app-status-bar-style"
+    content="black-translucent"
+  />
+  <meta
+    name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+  />
+  <meta name="description" content="" />
+  <link
+    rel="shortcut icon"
+    href="./img/favicons/favicon.ico"
+    type="image/x-icon"
+  />
+  <link rel="apple-touch-icon" href="./img/favicons/apple-touch-icon.png" />
+  <link
+    rel="apple-touch-icon"
+    sizes="57x57"
+    href="./img/favicons/apple-touch-icon-57x57.png"
+  />
+  <link
+    rel="apple-touch-icon"
+    sizes="72x72"
+    href="./img/favicons/apple-touch-icon-72x72.png"
+  />
+  <link
+    rel="apple-touch-icon"
+    sizes="76x76"
+    href="./img/favicons/apple-touch-icon-76x76.png"
+  />
+  <link
+    rel="apple-touch-icon"
+    sizes="114x114"
+    href="./img/favicons/apple-touch-icon-114x114.png"
+  />
+  <link
+    rel="apple-touch-icon"
+    sizes="120x120"
+    href="./img/favicons/apple-touch-icon-120x120.png"
+  />
+  <link
+    rel="apple-touch-icon"
+    sizes="144x144"
+    href="./img/favicons/apple-touch-icon-144x144.png"
+  />
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="./img/favicons/apple-touch-icon-180x180.png"
+  />
+  <link rel="stylesheet" href="./styles/main.min.css" />
+</head>
+<body>
+<header class="header">
+  <div class="container">
+    <div class="d-flex d-flex--align-center d-flex--space-between header-wrapper">
+
+      <p class="logo">UP<span>sale.</span></p>
+
+      <nav class="header-nav">
+        <a href="#services" class="header-nav__link js-anchor js-menu__link">Услуги</a>
+        <a href="#cases" class="header-nav__link js-anchor js-menu__link">Кейсы</a>
+        <a href="#contacts" class="header-nav__link is-active js-anchor js-menu__link">Контакты</a>
+      </nav>
+
+      <button class="nav-toggler js-burger">
+        <span class="nav-toggler__line"></span>
+        <span class="nav-toggler__line"></span>
+      </button>
+
+    </div>
+  </div>
+</header>
+<main>
+  <section class="section section--hero">
+    <div class="container">
+      <div class="d-flex d-flex--space-between">
+        <div class="hero__left-col">
+          <h1 class="ttl-1 mb-20 mb-md-30">Комплексный подход по увеличению продаж</h1>
+          <p class="text-hero d-none d-md-block mb-md-30">UPsale. - это не просто термин или техника которая активно
+            применяется в продажах.</p>
+          <p class="text-hero">UPsale. - это новый уровень. Команда которая освободит вас от рутинной, возможно
+            незнакомой, работы и при этом усилит ваши коммерческие показатели.</p>
+        </div>
+        <div class="d-none d-md-block hero__right-col">
+          <form action="" class="form form-hero">
+            <p class="form-hero__title">Оставьте заявку на бесплатную консультацию</p>
+            <input type="text" class="form__input form__input--name" placeholder="Ваше имя">
+            <input type="tel" class="form__input form__input--phone" placeholder="Телефон">
+            <input type="email" class="form__input form__input--email" placeholder="Email">
+
+            <select name="" class="form-hero__select">
+              <option value="">Отдел продаж «под ключ»</option>
+              <option value="">Отдел продаж</option>
+              <option value="">Аудит</option>
+            </select>
+            <button type="submit" class="button form-hero__button mx-auto mt-20">Отправить</button>
+          </form>
+        </div>
+      </div>
+      <div class="circle-wrapper">
+        <!--<img src="./img/sprites/sprite.svg#arrow" alt="" class="arrow-animation">-->
+
+        <svg class="arrow-animation" width="8" height="101" viewBox="0 0 8 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3.64645 100.354C3.84171 100.549 4.1583 100.549 4.35356 100.354L7.53554 97.1716C7.7308 96.9763 7.7308 96.6597 7.53554 96.4645C7.34028 96.2692 7.0237 96.2692 6.82843 96.4645L4.00001 99.2929L1.17158 96.4645C0.976317 96.2692 0.659734 96.2692 0.464472 96.4645C0.26921 96.6597 0.26921 96.9763 0.464472 97.1716L3.64645 100.354ZM3.5 3.10792e-08L3.50001 100L4.50001 100L4.5 -3.10792e-08L3.5 3.10792e-08Z" fill="black"/>
+        </svg>
+
+        <a href="#services" class="circle js-anchor"></a>
+
+      </div>
+      <div class="button-modal-wrapper d-md-none">
+        <p class="button-modal__text">Подай заявку на консультацию бесплатно</p>
+        <button class="button-modal">Записаться</button>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="services" class="section section--services">
+    <div class="container">
+      <h2 class="ttl-2 mb-25 mb-lg-50">Услуги</h2>
+      <div class="services-wrapper">
+        <div class="services-wrapper__item tabs">
+          <p class="tab is-active js-tab" data-tab="1">отдел Продаж «под Ключ»</p>
+          <p class="tab js-tab" data-tab="2">Отдел продаж на аутсорсе</p>
+          <p class="tab js-tab" data-tab="3">Аудит Отдела продаж</p>
+          <p class="tab js-tab" data-tab="4">Найм и адаптация</p>
+          <p class="tab js-tab" data-tab="5">Разработка и внедрение<br> системы продаж</p>
+        </div>
+        <div class="services-wrapper__item tabs-content">
+          <div class="tab-content is-active js-tab-content" id="1">
+            <svg class="tab-content__img tab-content__img--key" width="30" height="30" viewBox="0 0 30 30" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path d="M28.9925 23.8669L16.8592 11.7335C18.0592 8.66688 17.3925 5.06688 14.8592 2.53354C12.1925 -0.133122 8.1925 -0.666455 4.9925 0.800212L10.7258 6.53354L6.72583 10.5335L0.859164 4.80021C-0.740836 8.00021 -0.0741694 12.0002 2.5925 14.6669C5.12583 17.2002 8.72583 17.8669 11.7925 16.6669L23.9258 28.8002C24.4592 29.3335 25.2592 29.3335 25.7925 28.8002L28.8592 25.7335C29.5258 25.2002 29.5258 24.2669 28.9925 23.8669Z"
+                    fill="black"/>
+            </svg>
+
+            <ul>
+              <li>аудит продукта;</li>
+              <li>подбор менеджеров + РОП;</li>
+              <li>проработка СФМ;</li>
+              <li>адаптация команды;</li>
+              <li>описание бизнес-процессов по работе с клиентами;</li>
+              <li>проработка скриптов, писем, отчетности;</li>
+              <li>внедрение CRM и телефонии;</li>
+              <li>проработка системы контроля KPI.</li>
+            </ul>
+          </div>
+          <div class="tab-content js-tab-content" id="2">
+            <svg class="tab-content__img tab-content__img--settings" width="32" height="33" viewBox="0 0 32 33"
+                 fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M28.2403 18.1087C28.302 17.5931 28.3431 17.0569 28.3431 16.5C28.3431 15.9431 28.302 15.4069 28.2197 14.8913L31.6964 12.1688C32.0049 11.9213 32.0872 11.4675 31.9021 11.1169L28.6106 5.40375C28.4049 5.0325 27.9729 4.90875 27.6026 5.0325L23.5087 6.6825C22.6447 6.0225 21.7396 5.48625 20.7315 5.07375L20.1144 0.70125C20.0527 0.28875 19.7029 0 19.2915 0H12.7085C12.2971 0 11.9679 0.28875 11.9062 0.70125L11.289 5.07375C10.281 5.48625 9.35527 6.04312 8.51183 6.6825L4.41801 5.0325C4.04772 4.88813 3.61571 5.0325 3.40999 5.40375L0.118485 11.1169C-0.0872345 11.4881 -0.00494654 11.9213 0.324204 12.1688L3.80086 14.8913C3.71857 15.4069 3.65685 15.9638 3.65685 16.5C3.65685 17.0362 3.698 17.5931 3.78028 18.1087L0.303632 20.8313C-0.00494703 21.0788 -0.0872345 21.5325 0.0979127 21.8831L3.38942 27.5963C3.59514 27.9675 4.02715 28.0913 4.39744 27.9675L8.49125 26.3175C9.35527 26.9775 10.2604 27.5137 11.2685 27.9262L11.8856 32.2987C11.9679 32.7112 12.2971 33 12.7085 33H19.2915C19.7029 33 20.0527 32.7112 20.0938 32.2987L20.711 27.9262C21.719 27.5137 22.6447 26.9569 23.4882 26.3175L27.582 27.9675C27.9523 28.1119 28.3843 27.9675 28.59 27.5963L31.8815 21.8831C32.0872 21.5119 32.0049 21.0788 31.6758 20.8313L28.2403 18.1087V18.1087ZM16 22.6875C12.6056 22.6875 9.82843 19.9031 9.82843 16.5C9.82843 13.0969 12.6056 10.3125 16 10.3125C19.3944 10.3125 22.1716 13.0969 22.1716 16.5C22.1716 19.9031 19.3944 22.6875 16 22.6875Z"
+                    fill="black"/>
+            </svg>
+
+            <ul>
+              <li>адаптация менеджера конкретно под ваш продукт;</li>
+              <li>контроль качества проработки клиентов;</li>
+              <li>подготовка скриптов и писем;</li>
+              <li>проработка бизнес-процессов.</li>
+            </ul>
+          </div>
+          <div class="tab-content js-tab-content" id="3">
+            <svg class="tab-content__img tab-content__img--blank" width="26" height="29" viewBox="0 0 26 29" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.6667 2.83333H16.745C16.15 1.19 14.5917 0 12.75 0C10.9083 0 9.35 1.19 8.755 2.83333H2.83333C1.275 2.83333 0 4.10833 0 5.66667V25.5C0 27.0583 1.275 28.3333 2.83333 28.3333H22.6667C24.225 28.3333 25.5 27.0583 25.5 25.5V5.66667C25.5 4.10833 24.225 2.83333 22.6667 2.83333ZM12.75 2.83333C13.5292 2.83333 14.1667 3.47083 14.1667 4.25C14.1667 5.02917 13.5292 5.66667 12.75 5.66667C11.9708 5.66667 11.3333 5.02917 11.3333 4.25C11.3333 3.47083 11.9708 2.83333 12.75 2.83333ZM15.5833 22.6667H5.66667V19.8333H15.5833V22.6667ZM19.8333 17H5.66667V14.1667H19.8333V17ZM19.8333 11.3333H5.66667V8.5H19.8333V11.3333Z"
+                    fill="black"/>
+            </svg>
+
+            <ul>
+              <li>анализ скриптов, этапов работы с клиентами;</li>
+              <li>анализ сервисов для работы с клиентами (CRM, телефония, сервисы для рассылок);</li>
+              <li>формирование документа с пошаговым внедрением и бизнес-процессами для увеличения показателей.</li>
+            </ul>
+          </div>
+          <div class="tab-content js-tab-content" id="4">
+            <svg class="tab-content__img tab-content__img--person" width="24" height="27" viewBox="0 0 24 27"
+                 fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M23.3333 5.33333C19.8533 6.26667 15.7733 6.66667 12 6.66667C8.22667 6.66667 4.14667 6.26667 0.666667 5.33333L0 8C2.48 8.66667 5.33333 9.10667 8 9.33333V26.6667H10.6667V18.6667H13.3333V26.6667H16V9.33333C18.6667 9.10667 21.52 8.66667 24 8L23.3333 5.33333ZM12 5.33333C13.4667 5.33333 14.6667 4.13333 14.6667 2.66667C14.6667 1.2 13.4667 0 12 0C10.5333 0 9.33333 1.2 9.33333 2.66667C9.33333 4.13333 10.5333 5.33333 12 5.33333Z"
+                    fill="black"/>
+            </svg>
+            <ul>
+              <li>формирование продающего текста вакансии исходя из требований к кандидату;</li>
+              <li>предварительное тестирование кандидатов;</li>
+              <li>анализ качеств соискателя на индивидуальном собеседовании;</li>
+              <li>адаптация сотрудника к компании, продукту, скриптам.</li>
+            </ul>
+          </div>
+          <div class="tab-content js-tab-content" id="5">
+            <svg class="tab-content__img tab-content__img--reverse" width="23" height="32" viewBox="0 0 23 32"
+                 fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.3333 7.08333V11.3333L17 5.66667L11.3333 0V4.25C5.07167 4.25 0 9.32167 0 15.5833C0 17.8075 0.651666 19.8758 1.75667 21.6183L3.825 19.55C3.1875 18.3742 2.83333 17.0142 2.83333 15.5833C2.83333 10.8942 6.64417 7.08333 11.3333 7.08333ZM20.91 9.54833L18.8417 11.6167C19.465 12.8067 19.8333 14.1525 19.8333 15.5833C19.8333 20.2725 16.0225 24.0833 11.3333 24.0833V19.8333L5.66667 25.5L11.3333 31.1667V26.9167C17.595 26.9167 22.6667 21.845 22.6667 15.5833C22.6667 13.3592 22.015 11.2908 20.91 9.54833V9.54833Z"
+                    fill="black"/>
+            </svg>
+
+            <ul>
+              <li>разработка скриптов;</li>
+              <li>разработка системы финансовой мотивации;</li>
+              <li>внедрение CRM;</li>
+              <li>внедрение системы контроля KPI;</li>
+              <li>разработка Road Map по работе с клиентом.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--running">
+    <div class="running-text__wrapper">
+      <div class="running-text">команда UPsale для вас, если вы:</div>
+      <div class="running-text">команда UPsale для вас, если вы:</div>
+      <div class="running-text">команда UPsale для вас, если вы:</div>
+    </div>
+  </section>
+
+  <section class="section section--cards">
+    <div class="container">
+      <div class="d-flex d-flex--column d-flex--align-center d-flex-lg-row d-flex-lg-space-between mb-40 mb-lg-100 ">
+        <div class="card js-card is-hovered">
+          <div class="card__front is-hidden">
+            <img src="./img/sprites/sprite.svg#card-1" alt="" class="card__img card__img--1">
+            <p class="card__title">Руководитель проекта</p>
+          </div>
+          <div class="card__back is-visible">
+            <p class="card__text">которому нужен отдел продаж, особенно если вы ограничены во времени</p>
+          </div>
+        </div>
+        <div class="card js-card">
+          <div class="card__front">
+            <img src="./img/sprites/sprite.svg#card-2" alt="" class="card__img card__img--2">
+            <p class="card__title">Эксперт</p>
+          </div>
+          <div class="card__back">
+            <p class="card__text">у которого есть интересный продукт и амбиции стать №1, а знаний в продажах нет и в
+              принципе не знаете с чего начать</p>
+          </div>
+        </div>
+        <div class="card js-card">
+          <div class="card__front">
+            <img src="./img/sprites/sprite.svg#card-3" alt="" class="card__img card__img--3">
+            <p class="card__title">Коммерческий директор</p>
+          </div>
+          <div class="card__back">
+            <p class="card__text">который хочет значительно увеличить продажи используя актуальные инструменты</p>
+          </div>
+        </div>
+        <div class="card js-card">
+          <div class="card__front">
+            <img src="./img/sprites/sprite.svg#card-4" alt="" class="card__img card__img--4">
+            <p class="card__title">Предприниматель</p>
+          </div>
+          <div class="card__back">
+            <p class="card__text">которому нужен свежий взгляд на существующий отдел продаж и стратегия
+              по развитию</p>
+          </div>
+        </div>
+      </div>
+
+      <p class="w-lg-850 text text-centered mx-auto mb-40 mb-lg-50">*Даже если вы не увидели себя выше но вам нужны
+        большие продажи, жмите на кнопку записаться на консультацию. Мы найдем решение для вас!</p>
+      <a href="#cooperation" class="button button--link button-2 d-lg-none mx-auto js-anchor">Записаться</a>
+      <a href="#cooperation" class="button button--link button-2 button-2--big d-none d-lg-flex mx-auto js-anchor">Записаться
+        на консультацию</a>
+    </div>
+  </section>
+
+  <section class="section section--advantages d-none d-md-block">
+    <div class="container">
+      <h2 class="ttl-2 mb-25">Ваши выгоды</h2>
+    </div>
+    <div class="container container--wide">
+      <div class="d-flex d-flex--justify-center">
+        <div class="advantage">
+          <p class="advantage__number">01</p>
+          <p class="advantage__text">Избавляетесь от затрат
+            на аренду офиса и покупку дорогостоящей техники</p>
+        </div>
+        <div class="advantage">
+          <p class="advantage__number">02</p>
+          <p class="advantage__text">Не тратите время на постоянный поиск и адаптацию менеджеров</p>
+        </div>
+        <div class="advantage">
+          <p class="advantage__number">03</p>
+          <p class="advantage__text">Не ломаете голову
+            над мотивацией всех участников отдела продаж</p>
+        </div>
+        <div class="advantage">
+          <p class="advantage__number">04</p>
+          <p class="advantage__text">Написание скриптов, контроль показателей и эффективности берем на себя</p>
+        </div>
+        <div class="advantage">
+          <p class="advantage__number">05</p>
+          <p class="advantage__text">Предоставляем понятную
+            отчетность и детальную аналитику</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--team d-none d-md-block">
+    <div class="container">
+      <h2 class="ttl-2 mb-70">Команда</h2>
+      <div class="d-flex d-flex--space-between">
+        <div class="team-member">
+          <img src="./img/kolya.jpg" alt="" class="team-member__img">
+          <p class="team-member__name">Николай Гордеев</p>
+        </div>
+
+        <div class="team-member">
+          <img src="./img/vova.jpg" alt="" class="team-member__img">
+          <p class="team-member__name">Владимир Антонов</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cases" class="section section--recommendations">
+    <div class="container">
+      <h2 class="ttl-2 mb-70 d-none d-md-block">Что о нас говорят и почему рекомендуют</h2>
+      <h2 class="ttl-2 d-lg-none">Что о нас говорят и</h2>
+      <h2 class="ttl-2 d-lg-none mb-25">почему рекомендуют</h2>
+
+      <div class="position-relative slider-wrapper">
+        <img src="./img/sprites/sprite.svg#dots" class="dots" alt="">
+        <img src="./img/sprites/sprite.svg#dots" class="dots dots--bottom" alt="">
+        <img src="./img/sprites/sprite.svg#dots-mob" class="dots-mob" alt="">
+        <div class="swiper-container swiper-container--recommendations">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide--recommendation">
+              <div class="slide-block">
+                <p class="slide__title">«Участвовали в запуске более 10 успешных проектов совместно с Liftmarketing»</p>
+                <p class="slide__text">Андрей Полищук<br>
+                  Сo-founder Liftmarketing,<br>
+                  поделился опытом сотрудничества.</p>
+              </div>
+              <iframe class="iframe" width="560" height="315" src="https://www.youtube.com/embed/_KRKZymlIQg"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen></iframe>
+            </div>
+            <div class="swiper-slide swiper-slide--recommendation">
+              <div class="slide-block">
+                <p class="slide__title">«За месяц привлекли 1288 клиентов»</p>
+                <p class="slide__text">Бабак Эйвази<br>
+                  Управляющий партнер проекта “Продолжение следует” с Владимиром Яковлевым, поделился результатами
+                  совместного запуска.</p>
+              </div>
+              <iframe class="iframe" width="560" height="315" src="https://www.youtube.com/embed/P7_X3G1njq0"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen></iframe>
+            </div>
+            <div class="swiper-slide swiper-slide--recommendation">
+              <div class="slide-block">
+                <p class="slide__title">«За месяц привлекли 1288 клиентов»</p>
+                <p class="slide__text">Евгения Бородина<br>
+                  Управляющий партнер проекта “Продолжение следует” с Владимиром Яковлевым, поделился результатами
+                  совместного запуска.</p>
+              </div>
+              <iframe class="iframe" width="560" height="315" src="https://www.youtube.com/embed/xhEJZaQyV8c"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button swiper-button-prev--rec"></div>
+        <div class="swiper-button swiper-button-next--rec"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cooperation" class="section section--cooperation">
+    <div class="container">
+      <div class="cooperation__info">
+        <p class="cooperation__title">Как мы можем начать сотрудничество?</p>
+        <p class="cooperation__text">Оставьте заявку и в ближайшее время мы с вами свяжемся.</p>
+      </div>
+
+      <form action="" class="form form--cooperation mx-auto">
+        <input type="text" class="form__input form__input--name" placeholder="Ваше имя">
+        <input type="tel" class="form__input form__input--phone" placeholder="Телефон">
+        <input type="email" class="form__input form__input--email" placeholder="Email">
+
+        <select name="" class="">
+          <option value="">Отдел продаж «под ключ»</option>
+          <option value="">Отдел продаж</option>
+          <option value="">Аудит</option>
+        </select>
+        <button type="submit" class="button button--link button-cooperation mx-auto">Отправить</button>
+      </form>
+
+    </div>
+  </section>
+
+  <section class="section section--info d-none d-md-block">
+    <div class="container">
+      <div class="d-flex d-flex--space-between">
+        <div class="card-info">
+          <p class="card-info__title">Отдел продаж<br>
+            «под ключ»</p>
+          <svg class="card-info__img" width="32" height="32" viewBox="0 0 32 32" fill="none"
+               xmlns="http://www.w3.org/2000/svg">
+            <path d="M30.2664 25.3334L18.1331 13.2001C19.3331 10.1334 18.6664 6.53343 16.1331 4.0001C13.4664 1.33343 9.46642 0.800098 6.26642 2.26676L11.9998 8.0001L7.99976 12.0001L2.13309 6.26676C0.53309 9.46676 1.19976 13.4668 3.86642 16.1334C6.39976 18.6668 9.99976 19.3334 13.0664 18.1334L25.1998 30.2668C25.7331 30.8001 26.5331 30.8001 27.0664 30.2668L30.1331 27.2001C30.7998 26.6668 30.7998 25.7334 30.2664 25.3334Z"
+                  fill="black" fill-opacity="0.7"/>
+          </svg>
+
+        </div>
+        <div class="card-info">
+          <p class="card-info__title">Отдел продаж<br> на аутсорсе</p>
+          <svg class="card-info__img" width="32" height="33" viewBox="0 0 32 33" fill="none"
+               xmlns="http://www.w3.org/2000/svg">
+            <path d="M28.2403 18.1087C28.302 17.5931 28.3431 17.0569 28.3431 16.5C28.3431 15.9431 28.302 15.4069 28.2197 14.8913L31.6964 12.1687C32.0049 11.9213 32.0872 11.4675 31.9021 11.1169L28.6106 5.40375C28.4049 5.0325 27.9729 4.90875 27.6026 5.0325L23.5087 6.6825C22.6447 6.0225 21.7396 5.48625 20.7315 5.07375L20.1144 0.70125C20.0527 0.28875 19.7029 0 19.2915 0H12.7085C12.2971 0 11.9679 0.28875 11.9062 0.70125L11.289 5.07375C10.281 5.48625 9.35527 6.04312 8.51183 6.6825L4.41801 5.0325C4.04772 4.88812 3.61571 5.0325 3.40999 5.40375L0.118485 11.1169C-0.0872345 11.4881 -0.00494654 11.9213 0.324204 12.1687L3.80086 14.8913C3.71857 15.4069 3.65685 15.9637 3.65685 16.5C3.65685 17.0362 3.698 17.5931 3.78028 18.1087L0.303632 20.8313C-0.00494703 21.0788 -0.0872345 21.5325 0.0979127 21.8831L3.38942 27.5963C3.59514 27.9675 4.02715 28.0913 4.39744 27.9675L8.49125 26.3175C9.35527 26.9775 10.2604 27.5138 11.2685 27.9263L11.8856 32.2987C11.9679 32.7113 12.2971 33 12.7085 33H19.2915C19.7029 33 20.0527 32.7113 20.0938 32.2987L20.711 27.9263C21.719 27.5138 22.6447 26.9569 23.4882 26.3175L27.582 27.9675C27.9523 28.1119 28.3843 27.9675 28.59 27.5963L31.8815 21.8831C32.0872 21.5119 32.0049 21.0788 31.6758 20.8313L28.2403 18.1087ZM16 22.6875C12.6056 22.6875 9.82843 19.9031 9.82843 16.5C9.82843 13.0969 12.6056 10.3125 16 10.3125C19.3944 10.3125 22.1716 13.0969 22.1716 16.5C22.1716 19.9031 19.3944 22.6875 16 22.6875Z"
+                  fill="black" fill-opacity="0.7"/>
+          </svg>
+
+        </div>
+        <div class="card-info">
+          <p class="card-info__title">Аудит отдела<br> продаж</p>
+          <svg class="card-info__img" width="26" height="29" viewBox="0 0 26 29" fill="none"
+               xmlns="http://www.w3.org/2000/svg">
+            <path d="M22.9167 3.25008H16.995C16.4 1.60675 14.8417 0.416748 13 0.416748C11.1583 0.416748 9.6 1.60675 9.005 3.25008H3.08333C1.525 3.25008 0.25 4.52508 0.25 6.08342V25.9167C0.25 27.4751 1.525 28.7501 3.08333 28.7501H22.9167C24.475 28.7501 25.75 27.4751 25.75 25.9167V6.08342C25.75 4.52508 24.475 3.25008 22.9167 3.25008ZM13 3.25008C13.7792 3.25008 14.4167 3.88758 14.4167 4.66675C14.4167 5.44592 13.7792 6.08342 13 6.08342C12.2208 6.08342 11.5833 5.44592 11.5833 4.66675C11.5833 3.88758 12.2208 3.25008 13 3.25008ZM15.8333 23.0834H5.91667V20.2501H15.8333V23.0834ZM20.0833 17.4167H5.91667V14.5834H20.0833V17.4167ZM20.0833 11.7501H5.91667V8.91675H20.0833V11.7501Z"
+                  fill="black" fill-opacity="0.7"/>
+          </svg>
+
+
+        </div>
+        <div class="card-info">
+          <p class="card-info__title">Найм и адаптация</p>
+          <svg class="card-info__img" width="24" height="28" viewBox="0 0 24 28" fill="none"
+               xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.3333 6.00008C19.8533 6.93341 15.7733 7.33342 12 7.33342C8.22667 7.33342 4.14667 6.93341 0.666667 6.00008L0 8.66675C2.48 9.33342 5.33333 9.77341 8 10.0001V27.3334H10.6667V19.3334H13.3333V27.3334H16V10.0001C18.6667 9.77341 21.52 9.33342 24 8.66675L23.3333 6.00008ZM12 6.00008C13.4667 6.00008 14.6667 4.80008 14.6667 3.33341C14.6667 1.86675 13.4667 0.666748 12 0.666748C10.5333 0.666748 9.33333 1.86675 9.33333 3.33341C9.33333 4.80008 10.5333 6.00008 12 6.00008Z"
+                  fill="black" fill-opacity="0.7"/>
+          </svg>
+        </div>
+        <div class="card-info">
+          <p class="card-info__title">Разработка<br>и внедрение<br>системы продаж</p>
+          <svg class="card-info__img" width="24" height="32" viewBox="0 0 24 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.0001 7.50008V11.7501L17.6667 6.08341L12.0001 0.416748V4.66675C5.73841 4.66675 0.666748 9.73841 0.666748 16.0001C0.666748 18.2242 1.31841 20.2926 2.42341 22.0351L4.49175 19.9667C3.85425 18.7909 3.50008 17.4309 3.50008 16.0001C3.50008 11.3109 7.31091 7.50008 12.0001 7.50008ZM21.5767 9.96508L19.5084 12.0334C20.1317 13.2234 20.5001 14.5692 20.5001 16.0001C20.5001 20.6892 16.6892 24.5001 12.0001 24.5001V20.2501L6.33341 25.9167L12.0001 31.5834V27.3334C18.2617 27.3334 23.3334 22.2617 23.3334 16.0001C23.3334 13.7759 22.6817 11.7076 21.5767 9.96508Z" fill="black" fill-opacity="0.7"/>
+          </svg>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!--<section class="section">
+    <div class="container"></div>
+  </section>-->
+
+</main>
+<footer id="contacts" class="footer">
+  <div class="container">
+    <div class="d-flex d-flex--column d-flex-lg-row d-flex--space-between d-flex--nowrap mb-25">
+      <p class="footer-btn">Контакты</p>
+      <div class="">
+        <div class="d-flex d-flex--align-center w-max-content mb-20">
+          <svg class="phone-img" width="20" height="20" viewBox="0 0 20 20" fill="none"
+               xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.5663 19.1631H14.5943C15.1223 19.1631 15.6213 18.9638 15.9993 18.6016L18.7113 16.0029C18.8042 15.914 18.8779 15.8084 18.9283 15.6922C18.9786 15.5759 19.0045 15.4513 19.0045 15.3255C19.0045 15.1996 18.9786 15.075 18.9283 14.9588C18.8779 14.8425 18.8042 14.7369 18.7113 14.648L14.7113 10.8152C14.6185 10.7262 14.5083 10.6555 14.3869 10.6073C14.2656 10.5591 14.1356 10.5343 14.0043 10.5343C13.8729 10.5343 13.7429 10.5591 13.6216 10.6073C13.5002 10.6555 13.39 10.7262 13.2972 10.8152L11.7032 12.3426C10.9642 12.1318 9.58524 11.6527 8.71124 10.8152C7.83724 9.97776 7.33723 8.6564 7.11723 7.94829L8.71124 6.42091C8.80418 6.332 8.87792 6.22641 8.92823 6.11016C8.97854 5.99392 9.00444 5.86931 9.00444 5.74346C9.00444 5.61762 8.97854 5.49301 8.92823 5.37677C8.87792 5.26052 8.80418 5.15492 8.71124 5.06602L4.71123 1.23321C4.52005 1.0603 4.26711 0.963983 4.00423 0.963983C3.74134 0.963983 3.4884 1.0603 3.29722 1.23321L0.586218 3.83185C0.206217 4.19597 -0.00778347 4.69615 0.000216545 5.20687C0.0232166 6.57135 0.400217 11.3106 4.29823 15.0457C8.19624 18.7808 13.1422 19.141 14.5663 19.1631V19.1631ZM4.00523 3.26555L6.59123 5.74346L5.29823 6.98242C5.18056 7.09486 5.09413 7.23372 5.04679 7.38635C4.99946 7.53898 4.99273 7.70054 5.02723 7.8563C5.05123 7.96649 5.63823 10.5795 7.29824 12.1701C8.95824 13.7607 11.6852 14.3232 11.8002 14.3462C11.9628 14.3794 12.1315 14.3731 12.2908 14.3277C12.4501 14.2823 12.595 14.1994 12.7122 14.0865L14.0053 12.8476L16.5913 15.3255L14.5853 17.2467C13.3372 17.2266 9.06724 16.9056 5.71223 13.6898C2.34622 10.4645 2.02022 6.35863 2.00022 5.18675L4.00523 3.26555ZM17.9993 8.62286H19.9993C19.9993 3.70728 16.1263 0 10.9892 0V1.9164C15.0513 1.9164 17.9993 4.73639 17.9993 8.62286V8.62286Z"
+                  fill="black"/>
+            <path d="M10.999 5.74893C13.102 5.74893 13.999 6.60843 13.999 8.62354H15.999C15.999 5.53333 14.224 3.83252 10.999 3.83252V5.74893V5.74893Z"
+                  fill="black"/>
+          </svg>
+          <div class="phones">
+            <a href="tel:+380674545457" class="footer-link">+38 (067) 454 54 57</a>
+            <a href="tel:+380631323013" class="footer-link">+38 (063) 132 30 13</a>
+          </div>
+        </div>
+        <div class="d-flex d-flex--align-center w-max-content">
+          <svg width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20.25 0.226562H0.75C0.335156 0.226562 0 0.547724 0 0.945246V15.3189C0 15.7164 0.335156 16.0376 0.75 16.0376H20.25C20.6648 16.0376 21 15.7164 21 15.3189V0.945246C21 0.547724 20.6648 0.226562 20.25 0.226562ZM19.3125 2.715V14.4206H1.6875V2.715L1.04063 2.23214L1.96172 1.09797L2.96484 1.84585H18.0375L19.0406 1.09797L19.9617 2.23214L19.3125 2.715ZM18.0375 1.8436L10.5 7.45831L2.9625 1.8436L1.95938 1.09572L1.03828 2.22989L1.68516 2.71276L9.69141 8.67783C9.92165 8.84924 10.2049 8.94228 10.4965 8.94228C10.7881 8.94228 11.0713 8.84924 11.3016 8.67783L19.3125 2.715L19.9594 2.23214L19.0383 1.09797L18.0375 1.8436Z"
+                  fill="black"/>
+          </svg>
+          <a target="_blank" href="mailto:info@upsale.biz" class="footer-link">info@upsale.biz</a>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex d-flex--align-center d-flex--justify-end d-flex-lg-justify-center">
+      <svg class="copyright" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.04 5.43C5.065 5.265 5.12 5.12 5.19 4.995C5.26 4.87 5.36 4.765 5.485 4.685C5.605 4.61 5.755 4.575 5.94 4.57C6.055 4.575 6.16 4.595 6.255 4.635C6.355 4.68 6.445 4.74 6.515 4.815C6.585 4.89 6.64 4.98 6.685 5.08C6.73 5.18 6.75 5.29 6.755 5.4H7.65C7.64 5.165 7.595 4.95 7.51 4.755C7.425 4.56 7.31 4.39 7.16 4.25C7.01 4.11 6.83 4 6.62 3.92C6.41 3.84 6.18 3.805 5.925 3.805C5.6 3.805 5.315 3.86 5.075 3.975C4.835 4.09 4.635 4.24 4.475 4.435C4.315 4.63 4.195 4.855 4.12 5.115C4.045 5.375 4 5.645 4 5.935V6.07C4 6.36 4.04 6.63 4.115 6.89C4.19 7.15 4.31 7.375 4.47 7.565C4.63 7.755 4.83 7.91 5.07 8.02C5.31 8.13 5.595 8.19 5.92 8.19C6.155 8.19 6.375 8.15 6.58 8.075C6.785 8 6.965 7.895 7.12 7.76C7.275 7.625 7.4 7.47 7.49 7.29C7.58 7.11 7.635 6.92 7.64 6.715H6.745C6.74 6.82 6.715 6.915 6.67 7.005C6.625 7.095 6.565 7.17 6.49 7.235C6.415 7.3 6.33 7.35 6.23 7.385C6.135 7.42 6.035 7.43 5.93 7.435C5.75 7.43 5.6 7.395 5.485 7.32C5.36 7.24 5.26 7.135 5.19 7.01C5.12 6.885 5.065 6.735 5.04 6.57C5.015 6.405 5 6.235 5 6.07V5.935C5 5.76 5.015 5.595 5.04 5.43V5.43ZM6 1C3.24 1 1 3.24 1 6C1 8.76 3.24 11 6 11C8.76 11 11 8.76 11 6C11 3.24 8.76 1 6 1ZM6 10C3.795 10 2 8.205 2 6C2 3.795 3.795 2 6 2C8.205 2 10 3.795 10 6C10 8.205 8.205 10 6 10Z" fill="black"/>
+      </svg>
+
+      <p class="copyright__text">2020. <span>UP</span>sale.</p>
+    </div>
+  </div>
+</footer>
+<!-- -->
+<script src="./js/main.min.js"></script>
+</body>
+</html>
